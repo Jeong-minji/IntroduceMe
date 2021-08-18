@@ -164,3 +164,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}

@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   padding: 26px 160px;
   letter-spacing: 4px;
+  align-items: center;
 }
 
 #logo {
@@ -24,7 +25,7 @@ header {
   margin: 0 150px;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
 }
 
 .main img {
@@ -42,30 +43,45 @@ header {
   font-size: 6vw;
   text-align: left;
   line-height: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 4%;
+  padding: 5% 4%;
+}
+
+.blink {
+  animation: blink 1s infinite;
+  font-size: 6vw;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
 }
 
 .area {
+  margin: 0 150px;
+}
+
+.area1 {
   background: #dae3f3;
   display: flex;
   flex-direction: column;
-  padding: 30px 150px;
-  margin: 0 150px;
+  justify-content: center;
+  height: 760px;
+  position: relative;
+  margin-top: 690px;
 }
 
 .area_title {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .area_content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .content_image img {
@@ -85,6 +101,6 @@ header {
 }
 
 .content_text p {
-  font-size: 2.4vh;
+  font-size: 2.2vh;
   line-height: 4vh;
 }
