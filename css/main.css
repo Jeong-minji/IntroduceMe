@@ -1,10 +1,11 @@
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 26px 160px;
   letter-spacing: 4px;
   align-items: center;
+  padding: 26px 160px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 #logo {
@@ -66,7 +67,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 760px;
+  height: 690px;
   position: relative;
   margin-top: 690px;
 }

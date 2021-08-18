@@ -12,4 +12,4 @@ let typing = () => {
   }
 };
 
-setInterval(typing, 300);
+setInterval(typing, 200);
