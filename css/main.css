@@ -62,7 +62,7 @@ header {
   margin: 0 150px;
 }
 
-.area1 {
+.about {
   background: #dae3f3;
   display: flex;
   flex-direction: column;
@@ -104,4 +104,14 @@ header {
 .content_text p {
   font-size: 2.2vh;
   line-height: 4vh;
+}
+
+.skills {
+  background: #dae3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 690px;
+  position: relative;
+  margin-top: 690px;
 }
