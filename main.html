@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Welcome</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 </head>
+
 <body>
     <header>
         <a id="logo">MINJI</a>
         <ul class="nav">
             <li><a>ABOUT</a></li>
             <li><a>SKILLS</a></li>
-            <li><a>PROJECTS</a></li>
+            <li><a>PROJECT</a></li>
             <li><a>CONTACT</a></li>
         </ul>
     </header>
@@ -22,29 +26,65 @@
         </div>
     </div>
     <div class="area about">
-        <h2 class="area_title">About Me</h2>
+        <h2 class="area_title">ABOUT ME</h2>
         <div class="area_content">
-            <div class="content_image">
-                <img src="./image/me3.jpg"/>
-            </div>
+            <img src="./image/me3.jpg" />
             <div class="content_text">
-                <h3>소통하는 프론트엔드 개발자, 정민지입니다.</h3>
+                <h3>소통하는 프론트엔드 개발자, 정민지입니다</h3>
                 <p>
-                    대덕소프트웨어마이스터고등학교에서 소프트웨어개발을 전공하며<br>
-                    웹 프로그래밍, 소프트웨어공학, DATABASE등을 배웠습니다.<br>
-                    졸업 후, 국립공원공단에서 정보 시스템 관련 업무를 맡았습니다.<br>
-                    하지만 프론트엔드 개발자로서의 꿈을 이루기 위해 퇴사 후<br>
-                    HTML, CSS, Javascript, React.js를 사용해 웹사이트를 개발하며,<br>
-                    매주 스터디를 통해 프론트엔드 개발자로서의 지식을 쌓아가고 있습니다.<br><br>
-                    개발은 소통이 가장 중요하다고 생각합니다.<br>
-                    동료들과, 유저들과 항상 적극적으로 소통하고 배우는 개발자가 되기 위해<br>노력중입니다.<br>
+                    대덕소프트웨어마이스터고등학교에서 소프트웨어개발을 전공하며<br />
+                    웹 프로그래밍, 소프트웨어공학, DATABASE등을 배웠습니다.<br />
+                    졸업 후, 국립공원공단에서 정보 시스템 관련 업무를 맡았습니다.<br />
+                    하지만 프론트엔드 개발자로서의 꿈을 이루기 위해 퇴사 후<br />
+                    HTML, CSS, Javascript, React.js를 사용해 웹사이트를 개발하며,<br />
+                    매주 스터디를 통해 프론트엔드 개발자로서의 지식을 쌓아가고
+                    있습니다.<br /><br />
+                    개발은 소통이 가장 중요하다고 생각합니다.<br />
+                    동료들과, 유저들과 항상 적극적으로 소통하고 배우는 개발자가 되기
+                    위해<br />노력중입니다.<br />
                 </p>
             </div>
         </div>
     </div>
     <div class="area skills">
-
+        <h2 class="area_title">SKILLS</h2>
+        <div class="grid_skills">
+            <div class="grid_column">
+                <div class="grid_cell">
+                    <i class="fab fa-html5 fa-7x" style="color: #e55125"></i>
+                    <h5>HTML</h5>
+                </div>
+                <div class="grid_cell">
+                    <i class="fab fa-css3-alt fa-7x" style="color: #0a73b8"></i>
+                    <h5>CSS</h5>
+                </div>
+                <div class="grid_cell">
+                    <i class="fab fa-js-square fa-7x" style="color: #e5a228"></i>
+                    <h5>Javascript</h5>
+                </div>
+            </div>
+            <div class="grid_column">
+                <div class="grid_cell">
+                    <i class="fab fa-react fa-7x" style="color: #61dafb"></i>
+                    <h5>React.js</h5>
+                </div>
+                <div class="grid_cell">
+                    <i class="fab fa-git fa-7x"></i>
+                    <h5>Github</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area project">
+        <h2 class="area_title">PROJECT</h2>
+    </div>
+    <div class="area contact">
+        <h2 class="area_title">CONTACT</h2>
+        <p>jeongminji5181@gmail.com</p>
+        <p>my <a href="velog.io/@alswl5181">Velog</a></p>
+        <p>Jeong-minji <a href="https://github.com/Jeong-minji/">github</a></p>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
