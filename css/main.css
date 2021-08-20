@@ -133,3 +133,22 @@ header {
   font-weight: lighter;
   margin-top: 10px;
 }
+
+.contact :nth-child(2) {
+  margin: 30px 0;
+}
+
+.contact i {
+  font-size: 18px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.contact i:hover {
+  background-color: skyblue;
+  opacity: 0.7;
+  transition: all ease 0.5s 0s;
+}
