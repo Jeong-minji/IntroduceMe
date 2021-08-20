@@ -74,6 +74,7 @@ header {
 .area_title {
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .area_content {
@@ -109,7 +110,6 @@ header {
 }
 
 .grid_skills {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,8 +134,53 @@ header {
   margin-top: 10px;
 }
 
+.project {
+  background-color: azure;
+}
+
+.project_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content_column p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.project_list {
+  margin: 0 10px;
+  width: 340px;
+  height: 200px;
+}
+
+#project1 {
+  background-size: cover;
+  background-image: url("../image/insta.PNG");
+}
+
+#project2 {
+  background-size: cover;
+  background-image: url("../image/page.PNG");
+}
+
+#project3 {
+  background-size: contain;
+  background-image: url("../image/kokoa.gif");
+}
+
+.project_list img {
+  width: 100%;
+}
+
 .contact :nth-child(2) {
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .contact i {
