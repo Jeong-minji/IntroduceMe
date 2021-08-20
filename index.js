@@ -14,10 +14,10 @@ let typing = () => {
 
 setInterval(typing, 200);
 
-// $(window).ready(() => {
-//   main_height = $(".main").height();
-//   console.log(main_height);
-//   header_height = $("header").height();
-//   $(".area").css("height", main_height - header_height);
-//   console.log($(".area").height());
-// });
+function j_test(id) {
+  $("html, body")
+    .stop()
+    .animate({
+      scrollTop: $(`#${id}`).offset().top - 30,
+    });
+}

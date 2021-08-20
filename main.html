@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <a id="logo">MINJI</a>
+        <a id="logo" onclick="j_test('home')">MINJI</a>
         <ul class="nav">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li role="button" onclick="j_test('about')">ABOUT</li>
+            <li role="button" onclick="j_test('skills')">SKILLS</li>
+            <li role="button" onclick="j_test('projects')">PROJECT</li>
+            <li role="button" onclick="j_test('contact')">CONTACT</li>
         </ul>
     </header>
     <div class="main">
@@ -25,79 +25,88 @@
             <span class="typetext"></span><span class="blink">|</span>
         </div>
     </div>
-    <div class="area about" id="about">
-        <h2 class="area_title">ABOUT ME</h2>
-        <div class="area_content">
-            <img src="./image/me3.jpg" />
-            <div class="content_text">
-                <h3>소통하는 프론트엔드 개발자, 정민지입니다</h3>
-                <p>
-                    대덕소프트웨어마이스터고등학교에서 소프트웨어개발을 전공하며<br />
-                    웹 프로그래밍, 소프트웨어공학, DATABASE등을 배웠습니다.<br />
-                    졸업 후, 국립공원공단에서 정보 시스템 관련 업무를 맡았습니다.<br />
-                    하지만 프론트엔드 개발자로서의 꿈을 이루기 위해 퇴사 후<br />
-                    HTML, CSS, Javascript, React.js를 사용해 웹사이트를 개발하며,<br />
-                    매주 스터디를 통해 프론트엔드 개발자로서의 지식을 쌓아가고
-                    있습니다.<br /><br />
-                    개발은 소통이 가장 중요하다고 생각합니다.<br />
-                    동료들과, 유저들과 항상 적극적으로 소통하고 배우는 개발자가 되기
-                    위해<br />노력중입니다.<br />
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="area skills">
-        <h2 class="area_title" id="skills">SKILLS</h2>
-        <div class="grid_skills">
-            <div class="grid_column">
-                <div class="grid_cell">
-                    <i class="fab fa-html5 fa-7x" style="color: #e55125"></i>
-                    <h5>HTML</h5>
-                </div>
-                <div class="grid_cell">
-                    <i class="fab fa-css3-alt fa-7x" style="color: #0a73b8"></i>
-                    <h5>CSS</h5>
-                </div>
-                <div class="grid_cell">
-                    <i class="fab fa-js-square fa-7x" style="color: #e5a228"></i>
-                    <h5>Javascript</h5>
-                </div>
-            </div>
-            <div class="grid_column">
-                <div class="grid_cell">
-                    <i class="fab fa-react fa-7x" style="color: #61dafb"></i>
-                    <h5>React.js</h5>
-                </div>
-                <div class="grid_cell">
-                    <i class="fab fa-git fa-7x"></i>
-                    <h5>Github</h5>
+    <div id="home" class="area"></div>
+    <div class="area" id="about">
+        <div class="about" >
+            <h2 class="area_title">ABOUT ME</h2>
+            <div class="area_content">
+                <img src="./image/me3.jpg" />
+                <div class="content_text">
+                    <h3>소통하는 프론트엔드 개발자, 정민지입니다</h3>
+                    <p>
+                        대덕소프트웨어마이스터고등학교에서 소프트웨어개발을 전공하며<br />
+                        웹 프로그래밍, 소프트웨어공학, DATABASE등을 배웠습니다.<br />
+                        졸업 후, 국립공원공단에서 정보 시스템 관련 업무를 맡았습니다.<br />
+                        하지만 프론트엔드 개발자로서의 꿈을 이루기 위해 퇴사 후<br />
+                        HTML, CSS, Javascript, React.js를 사용해 웹사이트를 개발하며,<br />
+                        매주 스터디를 통해 프론트엔드 개발자로서의 지식을 쌓아가고
+                        있습니다.<br /><br />
+                        개발은 소통이 가장 중요하다고 생각합니다.<br />
+                        동료들과, 유저들과 항상 적극적으로 소통하고 배우는 개발자가 되기
+                        위해<br />노력중입니다.<br />
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="area project" id="projects">
-        <h2 class="area_title">PROJECT</h2>
-        <div class="project_content">
-            <div class="content_column">
-                <div class="project_list" id="project1"></div>
-                <p class="project_name">Instagram clone</p>
-            </div>
-            <div class="content_column">
-                <div class="project_list"  id="project2"></div>
-                <p class="project_name">Portfolio</p>
-            </div>
-            <div class="content_column">
-                <div class="project_list" id="project3"></div>
-                <p class="project_name">KakaoTalk clone</p>
+    <div class="area" id="skills"> 
+        <div class="skills">
+            <h2 class="area_title" >SKILLS</h2>
+            <div class="grid_skills">
+                <div class="grid_column">
+                    <div class="grid_cell">
+                        <i class="fab fa-html5 fa-7x" style="color: #e55125"></i>
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="grid_cell">
+                        <i class="fab fa-css3-alt fa-7x" style="color: #0a73b8"></i>
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="grid_cell">
+                        <i class="fab fa-js-square fa-7x" style="color: #e5a228"></i>
+                        <h5>Javascript</h5>
+                    </div>
+                </div>
+                <div class="grid_column">
+                    <div class="grid_cell">
+                        <i class="fab fa-react fa-7x" style="color: #61dafb"></i>
+                        <h5>React.js</h5>
+                    </div>
+                    <div class="grid_cell">
+                        <i class="fab fa-git fa-7x"></i>
+                        <h5>Github</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="area contact" id="contact">
-        <h2 class="area_title">CONTACT</h2>
-        <p>jeongminji5181@gmail.com</p>
-        <a href="https://velog.io/@alswl5181" target="_blank"><i class="fas fa-rss"></i></a>
-        <a href="https://github.com/Jeong-minji" target="_blank"><i class="fab fa-github"></i></a>
-        <a><i class="fab fa-instagram" target="_blank"></i></a>
+    <div class="area" id="projects">
+        <div class="project">
+            <h2 class="area_title">PROJECTS</h2>
+            <div class="project_content">
+                <div class="content_column">
+                    <div class="project_list" id="project1"></div>
+                    <p class="project_name">Instagram clone</p>
+                </div>
+                <div class="content_column">
+                    <div class="project_list" id="project2"></div>
+                    <p class="project_name">Chrome Extension clone</p>
+                </div>
+                <div class="content_column">
+                    <div class="project_list" id="project3"></div>
+                    <p class="project_name">KakaoTalk clone</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area" id="contact">
+        <div class="contact">
+            <h2 class="area_title">CONTACT</h2>
+            <p>jeongminji5181@gmail.com</p>
+            <a href="https://velog.io/@alswl5181" target="_blank"><i class="fas fa-rss"></i></a>
+            <a href="https://github.com/Jeong-minji" target="_blank"><i class="fab fa-github"></i></a>
+            <a><i class="fab fa-instagram" target="_blank"></i></a>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
